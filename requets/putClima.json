@@ -1,5 +1,0 @@
-{
-    "url":"http://l:8080/laboratorio7/rest/clima",
-    "method":"put",
-    "data":{"id":1,"gradosCentigrados":"10","gradosFarenheit":"26","humedadRelativa":"10","tipoNubosidad":"alta","ciudad":"medallo","dia":"1","mes":"1","probabilidadPrecipitaciones":"0.5"}
-}

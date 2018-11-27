@@ -3,8 +3,6 @@ package com.udea.services;
 import java.util.List;
 
 import javax.ejb.EJB;
-import javax.ejb.LocalBean;
-import javax.ejb.Stateless;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -22,8 +20,6 @@ import com.udea.model.Clima;
 
 
 @Path("/clima")
-@Stateless
-@LocalBean
 public class ClimaService {
 
     @EJB
@@ -34,7 +30,6 @@ public class ClimaService {
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public Response getAll(@PathParam("id") Long id) {
-        System.out.println("el param que le llega es : "+id);
         return Response.ok().entity(new Gson().toJson(ejb.getById(id))).build();
     }
 
