@@ -1,4 +1,4 @@
-connect 'jdbc:derby://localhost:1530/laboratorio7;user=root;password=root;create=true;';
+connect 'jdbc:derby://localhost:1527/laboratorio7;user=root;password=root;create=true;';
 create table clima(
     id int PRIMARY KEY  GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), 
     gradosCentigrados varchar(128), 
